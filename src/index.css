@@ -1,0 +1,73 @@
+body {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+}
+.hero img {
+  filter: drop-shadow(0 0 80px rgba(189, 53, 53, 0.87));
+}
+
+.movie{
+  max-width: 300px;
+  cursor: pointer;
+  height: 100%;
+  margin: 15px;
+}
+.movie:hover{
+  box-shadow: 0 0 30px rgb(230, 85, 85);
+  transform: scale(1.1); 
+
+
+}
+
+.banner{
+  position: relative;
+  height: 40vh;
+}
+
+.banner-bg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(94, 59, 59, 0.479);
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+.banner-bg{
+  font-size: 40px;
+  font-weight: bold;
+}
+.actor-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+}
+
+.actor-card:hover > p{
+  display: grid;
+  background: rgba(0, 0, 0, 0.24);
+
+}
+.actor-card p{
+  
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: none;
+  place-items: center;
+}
+
+
+
+@media (max-width: 1200px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
